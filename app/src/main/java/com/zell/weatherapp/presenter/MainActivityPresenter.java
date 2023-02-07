@@ -39,7 +39,7 @@ public class MainActivityPresenter implements Weather.Callback {
             return;
         }
         view.updateCity(String.valueOf(weather.getCity()));
-        view.updateTemperature("Температура воздуха: " + weather.getTemp() + " \u00B0");
+        view.updateTemperature((int) weather.getTemp() + " \u00B0");
         view.updateHumidity("Влажность: " + weather.getHumidity() + " %");
         view.updatePressure("Давление: " + String.format("%.2f",weather.getPressure() / 1.333) + " мм рт. ст.");
         view.updateWindSpeed("Скорость ветра: " + String.format("%.2f",weather.getWindSpeed() / 3.6) + " м/с");

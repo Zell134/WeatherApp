@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityPrese
     @Override
     public void throwError(String value) {
         clearViews();
-        tempView.setText("Измените название города в настройках");
+        humidityView.setText("Измените название города в настройках");
         Toast.makeText(this, value, Toast.LENGTH_SHORT).show();
     }
 
